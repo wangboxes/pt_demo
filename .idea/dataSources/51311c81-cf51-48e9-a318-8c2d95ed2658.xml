@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="MySQL - test@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+    <schema id="1" name="test">
+      <visible>1</visible>
+    </schema>
+    <schema id="2" name="bi"/>
+    <schema id="3" name="carinsurance"/>
+    <schema id="4" name="carinsure_service"/>
+    <schema id="5" name="cpms"/>
+    <schema id="6" name="gusher"/>
+    <schema id="7" name="igms"/>
+    <schema id="8" name="information_schema"/>
+    <schema id="9" name="lkpg"/>
+    <schema id="10" name="mybatisdemo"/>
+    <schema id="11" name="mysql"/>
+    <schema id="12" name="mysqlplus"/>
+    <schema id="13" name="openinsurance"/>
+    <schema id="14" name="p2p"/>
+    <schema id="15" name="payment"/>
+    <schema id="16" name="performance_schema"/>
+    <schema id="17" name="personal_insurance"/>
+    <schema id="18" name="pims"/>
+    <schema id="19" name="sogou_weixin"/>
+    <schema id="20" name="spiders"/>
+    <schema id="21" name="spring_data"/>
+    <schema id="22" name="sys"/>
+    <table id="23" parent="1" name="employee"/>
+    <table id="24" parent="1" name="girl"/>
+    <table id="25" parent="1" name="tb_employee"/>
+    <table id="26" parent="1" name="tb_user"/>
+    <table id="27" parent="1" name="user"/>
+    <column id="28" parent="23" name="id">
+      <mandatory>1</mandatory>
+      <data-type>bigint(20)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="29" parent="23" name="age">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="30" parent="23" name="hireDate">
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="31" parent="23" name="name">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="32" parent="23" name="version">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <key id="33" parent="23" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="34" parent="24" name="id">
+      <mandatory>1</mandatory>
+      <data-type>bigint(20)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="35" parent="24" name="name">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="36" parent="24" name="status">
+      <data-type>tinyint(4)|0</data-type>
+    </column>
+    <column id="37" parent="24" name="money">
+      <data-type>decimal(19,2)|0</data-type>
+    </column>
+    <key id="38" parent="24" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="39" parent="25" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <key id="40" parent="25" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="41" parent="26" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <key id="42" parent="26" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="43" parent="27" name="id">
+      <mandatory>1</mandatory>
+      <data-type>bigint(20)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="44" parent="27" name="name">
+      <data-type>varchar(50)|0</data-type>
+    </column>
+    <column id="45" parent="27" name="age">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="46" parent="27" name="hiredate">
+      <data-type>date|0</data-type>
+    </column>
+    <column id="47" parent="27" name="sn">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <key id="48" parent="27" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+  </database-model>
+</dataSource>
